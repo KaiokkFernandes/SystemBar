@@ -15,7 +15,7 @@ namespace SystemBarWeb.Controllers
         }
 
         [HttpPost]
-        [Route("/cliente/novo{regex:(^\\d{3}.d{3}.d{3}-d{3})$}")]
+        //[Route("/cliente/novo{regex:(^\\d{3}.d{3}.d{3}-d{3})$}")]
         public IActionResult Cadastrar([FromForm]Cliente cliente)
         {
 
