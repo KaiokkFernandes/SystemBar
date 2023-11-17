@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Security.Cryptography;
 
@@ -13,6 +14,9 @@ namespace SystemBarWeb.Models
             Reservada = 3,
             Bloqueada = 99
         }
+        [Required(ErrorMessage = "Número da mesa Obrigatório")]
+        [Display(Name ="Número")]
+
         public int Numero { get; set; }
 
         public StatusMesa Status { get; set; }
